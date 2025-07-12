@@ -338,7 +338,7 @@ body::before {
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     border-radius: 20px;
     padding: 50px 45px;
-    max-width: 520px;
+    max-width: 550px;
     margin: 20px;
     box-shadow: 
     0 32px 64px rgba(0, 0, 0, 0.3),
@@ -388,6 +388,9 @@ body::before {
     margin: 0 0 18px 0;
     font-size: 16px;
     font-weight: 500;
+}
+.alert-box a {
+    color: #d63031;
 }
 
 .alert-box p:first-of-type {
